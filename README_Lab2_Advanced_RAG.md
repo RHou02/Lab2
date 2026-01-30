@@ -44,7 +44,18 @@ We chose semantic chunking to preserve context across sentences. FAISS allows fa
 ---
 
 ## 4. Results
-v
+| Query | Method (Keyword / Vector / Hybrid) | Precision@5 | Recall@10 |
+| ----- | ---------------------------------- | ----------- | --------- |
+| Q1    | Keyword (BM25, α=0.2)              | 0.2         | 1.0       |
+| Q1    | Vector (FAISS)                     | 0.2         | 1.0       |
+| Q1    | Hybrid (BM25+Vector, α=0.2)        | 0.2         | 1.0       |
+| Q2    | Keyword (BM25, α=0.2)              | 0.4         | 1.0       |
+| Q2    | Vector (FAISS)                     | 0.6         | 1.0       |
+| Q2    | Hybrid (BM25+Vector, α=0.2)        | 0.6         | 1.0       |
+| Q3    | Keyword (BM25, α=0.2)              | 0.4         | 1.0       |
+| Q3    | Vector (FAISS)                     | 0.2         | 1.0       |
+| Q3    | Hybrid (BM25+Vector, α=0.2)        | 0.2         | 1.0       |
+
 
 
 *Replace numbers with your actual results.*
